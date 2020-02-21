@@ -22,16 +22,16 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Jimenez, Javier</o:Author>
   <o:LastAuthor>Jimenez, Javier</o:LastAuthor>
-  <o:Revision>1</o:Revision>
-  <o:TotalTime>1</o:TotalTime>
-  <o:Created>2020-02-21T18:57:00Z</o:Created>
-  <o:LastSaved>2020-02-21T18:59:00Z</o:LastSaved>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>5</o:TotalTime>
+  <o:Created>2020-02-21T20:28:00Z</o:Created>
+  <o:LastSaved>2020-02-21T20:28:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>97</o:Words>
-  <o:Characters>557</o:Characters>
-  <o:Lines>4</o:Lines>
-  <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>653</o:CharactersWithSpaces>
+  <o:Words>246</o:Words>
+  <o:Characters>1406</o:Characters>
+  <o:Lines>11</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1649</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -288,6 +288,8 @@ w\:* {behavior:url(#default#VML);}
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="HTML Variable"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="annotation subject"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="No List"/>
@@ -380,8 +382,11 @@ w\:* {behavior:url(#default#VML);}
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Table Web 2"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Balloon Text"/>
-  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
   <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
   <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
   <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
@@ -681,6 +686,28 @@ w\:* {behavior:url(#default#VML);}
 	font-size:12.0pt;
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
 a:link, span.MsoHyperlink
 	{mso-style-priority:99;
 	color:#0563C1;
@@ -694,6 +721,32 @@ a:visited, span.MsoHyperlinkFollowed
 	mso-themecolor:followedhyperlink;
 	text-decoration:underline;
 	text-underline:single;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
@@ -713,11 +766,19 @@ span.SpellE
 	{mso-style-type:export-only;
 	margin-bottom:8.0pt;
 	line-height:107%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("index_files/header.html") fs;
+	mso-footnote-continuation-separator:url("index_files/header.html") fcs;
+	mso-endnote-separator:url("index_files/header.html") es;
+	mso-endnote-continuation-separator:url("index_files/header.html") ecs;}
 @page WordSection1
 	{size:8.5in 11.0in;
 	margin:1.0in 1.0in 1.0in 1.0in;
 	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
+	mso-footer-margin:23.65pt;
+	mso-header:url("index_files/header.html") h1;
+	mso-footer:url("index_files/header.html") f1;
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
@@ -748,6 +809,23 @@ div.WordSection1
 	mso-hansi-theme-font:minor-latin;
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="1026"/>
@@ -761,12 +839,16 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<p class=MsoNormal><b><i><span style='font-size:22.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><a name="_Hlk33180108"></a><b><i><span
+style='font-size:22.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><b><i><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
 style='font-size:36.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
 style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
  filled="f" stroked="f">
@@ -787,103 +869,360 @@ style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_9" o:spid="_x0000_i1026" type="#_x0000_t75"
+</v:shapetype><v:shape id="Picture_x0020_9" o:spid="_x0000_i1029" type="#_x0000_t75"
  style='width:405.4pt;height:87pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=541 height=116
 src="index_files/image002.jpg" v:shapes="Picture_x0020_9"><![endif]></span><b><i><span
 style='font-size:36.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></i></b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><b><i><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
+style='font-size:36.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
 style='font-size:24.0pt;font-family:"Calibri Light",sans-serif'>PROJECT
 MANAGEMENT<o:p></o:p></span></i></b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><b><i><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
 style='font-size:16.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
 
-<p class=MsoNormal><b><i><span style='font-size:16.0pt;font-family:"Calibri Light",sans-serif'>Because
-MIDWAY TPM believes that engineered solutions are the key to successful
-results, we apply data, common sense and math to our management approach<o:p></o:p></span></i></b></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'>Because MIDWAY TPM believes that
+engineered solutions are the key to successful results, we apply data, common
+sense and math to our management approach<o:p></o:p></span></i></b></p>
 
-<p class=MsoNormal><b><i><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
 
-<p class=MsoNormal><b><span style='font-family:"Calibri Light",sans-serif'>SERVICES
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><span style='font-family:"Calibri Light",sans-serif'>SERVICES
 PROVIDED<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Project
-management<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Project management<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Process
-development<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Process development<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Cost
-control<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Cost control<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Schedule
-development and tracking<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Schedule development and tracking<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Custom
-reports<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Custom reports<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Automated
-reporting<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Automated reporting<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Document
-control<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Document control<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Staff
-augmentation<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Staff augmentation<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Meetings
-Agendas<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Meetings Agendas<o:p></o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
 style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Calibri Light",sans-serif'>CONTRACT
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:24.75pt;height:23.65pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=33 height=32
+src="index_files/image004.jpg" v:shapes="_x0000_i1028"><![endif]></span><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
+style='font-size:24.0pt;font-family:"Calibri Light",sans-serif'>TECHNICAL
+SPANISH SERVICES<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'>Because it is not easy to find
+qualified technical resources with adequate background to provide a
+well-crafted translation or interpretation<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><span style='font-family:"Calibri Light",sans-serif'>SERVICES
+PROVIDED<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>English to Spanish technical
+translation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Spanish documentation auditing<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>HMI, SCADA and PLC documentation
+translation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>English-Spanish Interpretation during
+meetings or phone calls<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Contracts review<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Technical Specifications review and
+interpretation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Request for Quotation or Proposal
+review and interpretation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Website translation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Database translation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:24.75pt;height:23.65pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=33 height=32
+src="index_files/image005.jpg" v:shapes="_x0000_i1027"><![endif]></span><span
+style='font-size:8.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:8.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:8.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:8.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:8.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><b><i><span
+style='font-size:24.0pt;font-family:"Calibri Light",sans-serif'>INTERNATIONAL
+PROJECTS<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'>Because 8 to 5 does not exist in a
+global economy, MIDWAY TPM believes in accomplishment, not a mere work schedule<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><i><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><span style='font-family:"Calibri Light",sans-serif'>SERVICES
+PROVIDED<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Remote project management<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>International travel<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Staff augmentation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>English-Spanish Interpretation during
+meetings or phone calls<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Spanish Contracts review<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Spanish Technical Specifications review
+and interpretation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Request for Proposal review and
+interpretation<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:16.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:24.75pt;height:23.65pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=33 height=32
+src="index_files/image006.jpg" v:shapes="_x0000_i1026"><![endif]></span><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><b><span style='font-family:"Calibri Light",sans-serif'>CONTRACT
 TYPES<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Hourly
-to a maximum under <span class=SpellE>well defined</span> scope<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Hourly to a maximum under <span
+class=SpellE>well defined</span> scope<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Hourly
-time &amp; expenses for staff augmentation contracts<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Hourly time &amp; expenses for staff
+augmentation contracts<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>Lump
-Sum under <span class=SpellE>well defined</span> scope<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'>Lump Sum under <span class=SpellE>well
+defined</span> scope<o:p></o:p></span></p>
 
-<p class=MsoNormal align=right style='text-align:right'><span class=SpellE><span
-lang=ES-CL style='font-size:11.0pt;font-family:"Calibri Light",sans-serif;
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:68.25pt;margin-bottom:
+0in;margin-left:1.0in;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+class=SpellE><span lang=ES-CL style='font-size:11.0pt;font-family:"Calibri Light",sans-serif;
 mso-ansi-language:ES-CL'>Contact</span></span><span lang=ES-CL
 style='font-size:11.0pt;font-family:"Calibri Light",sans-serif;mso-ansi-language:
 ES-CL'> Javier Jimenez, at<o:p></o:p></span></p>
 
-<p class=MsoNormal align=right style='text-align:right'><a
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><a
 href="mailto:javier@midwaytpm.com"><span lang=ES-CL style='font-size:11.0pt;
 font-family:"Calibri Light",sans-serif;mso-ansi-language:ES-CL'>javier@midwaytpm.com</span></a><span
 lang=ES-CL style='font-size:11.0pt;font-family:"Calibri Light",sans-serif;
 mso-ansi-language:ES-CL'><o:p></o:p></span></p>
 
-<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
-11.0pt;font-family:"Calibri Light",sans-serif'>(509) 714 6000<o:p></o:p></span></p>
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>(509) 714 6000<o:p></o:p></span></p>
 
-<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
-11.0pt;font-family:"Calibri Light",sans-serif'>for more information<o:p></o:p></span></p>
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'>for more
+information<o:p></o:p></span></p>
 
-<p class=MsoNormal align=center style='text-align:center'><span
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
+style='font-size:16.0pt;font-family:"Calibri Light",sans-serif'>THIS IS MIDWAY
+TPM<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:68.25pt;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center'><span
 style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8"
- o:spid="_x0000_i1025" type="#_x0000_t75" style='width:59.65pt;height:57.4pt;
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:59.65pt;height:57.75pt;
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image003.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=80 height=77
-src="index_files/image004.jpg" v:shapes="Picture_x0020_8"><![endif]></span><span
-style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:11.0pt;font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p>
+src="index_files/image007.jpg" v:shapes="Picture_x0020_8"><![endif]></span><span
+style='font-size:16.0pt;font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
